@@ -1,22 +1,11 @@
 .table {
     margin-top: 20px;
     overflow: scroll;
-    height: 400px;
-    background-color: white;
     color: #6a5d5d;
+    background-color: white;
+    height: 400px;
+    font-family: 'Roboto', sans-serif;
 }
-
-.table::-webkit-scrollbar {
-    display: none;
-}
-
-.table {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
 
 .table tr {
     display: flex;
@@ -25,8 +14,21 @@
 
 .table td {
     padding: 0.5rem;
+    border: none;
 }
 
 .table tr:nth-of-type(odd) {
     background-color: #f3f2f8;
+}
+
+.table::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+.table::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }

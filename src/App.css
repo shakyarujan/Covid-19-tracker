@@ -25,24 +25,51 @@ body {
 }
 
 .app__header>h1 {
-  color: #fc3c3c;
+  color: #c13d16;
   font-size: 2rem;
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .app__stats {
   display: flex;
   justify-content: space-between;
+  color: black;
 }
 
 .app__left {
   flex: 0.9;
 }
 
+.app__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+  height: 200px;
+}
+
+.app__graphTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Neuton', serif;
+  color: #c13d16;
+}
+
 .app__information>h3 {
-  color: #6a5d5d;
+  /* color: #6a5d5d; */
+  color: #c13d16;
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  font-family: 'Neuton', serif;
 }
 
 .app__information>h3:last-of-type {
