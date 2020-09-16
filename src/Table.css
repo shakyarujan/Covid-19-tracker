@@ -2,8 +2,21 @@
     margin-top: 20px;
     overflow: scroll;
     height: 400px;
+    background-color: white;
     color: #6a5d5d;
 }
+
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+.table {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 
 .table tr {
     display: flex;
